@@ -13,7 +13,6 @@ import {
   InfoAreaSection,
   CardAreaSection
 } from 'enthalpy'
-import 'enthalpy/dist/index.css'
 
 import useStyles from './styles'
 

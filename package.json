@@ -21,8 +21,8 @@
     "test:build": "run-s build",
     "test:lint": "eslint .",
     "lint": "eslint src/**/**/**/*.ts src/**/**/**/*.tsx .",
-    "lint:fix":"exlint --fix",
-    "format":"prettier --write **/*.{ts,tsx} **/**/*.{ts,tsx} **/**/**/*.{ts,tsx}",
+    "lint:fix": "exlint --fix",
+    "format": "prettier --write **/*.{ts,tsx} **/**/*.{ts,tsx} **/**/**/*.{ts,tsx}",
     "test:unit": "cross-env CI=1 react-scripts test --env=jsdom",
     "test:watch": "react-scripts test --env=jsdom",
     "predeploy": "cd example && npm install && npm run build",
@@ -31,18 +31,17 @@
   "peerDependencies": {
     "react": "^16.0.0"
   },
-  "lint-staged":{
-    "./src/components/Atoms/**/*@(ts|tsx)":[
+  "lint-staged": {
+    "./src/components/Atoms/**/*@(ts|tsx)": [
       "npm --cwd src/Atoms run lint",
       "npm --cwd src/Atoms run lint:fix",
       "npm --cwd src/Atoms run format"
     ],
-    "./src/components/Molecules/**/*@(ts|tsx)":[
+    "./src/components/Molecules/**/*@(ts|tsx)": [
       "npm --cwd src/Molecules run lint",
       "npm --cwd src/Molecules run lint:fix",
       "npm --cwd src/Molecules run format"
     ]
-
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^4.2.4",
