@@ -58,3 +58,7 @@ import EnthalpyButton from './EnthalpyButton'
   disabled Button
 </EnthalpyButton>
 ```
+```jsx
+import EnthalpyButton from './EnthalpyButton'
+;<EnthalpyButton/>
+```
