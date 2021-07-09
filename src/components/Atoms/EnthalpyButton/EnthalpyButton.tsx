@@ -1,11 +1,14 @@
+// Imports from module
 import * as React from 'react'
 import classNames from 'classnames'
 
+// Imports from enthalpy
 // eslint-disable-next-line no-unused-vars
 import { Button } from '@material-ui/core'
 // eslint-disable-next-line no-unused-vars
 import { ButtonStyle, EnthalpyButtonProps } from './EnthalpyButton.model'
 
+// Import styles
 import useStyles from '../../assets/tss/components/buttonStyles'
 
 export const EnthalpyButton: React.FC<EnthalpyButtonProps> = ({
@@ -20,7 +23,11 @@ export const EnthalpyButton: React.FC<EnthalpyButtonProps> = ({
   className,
   ...props
 }): JSX.Element => {
+
+  // Getting all the classes
   const classes: ButtonStyle = useStyles()
+
+  // Adding all the required classes to the btnClasses
   const btnClasses = classNames({
     [classes.button]: true,
     [classes.round]: round,
@@ -35,7 +42,7 @@ export const EnthalpyButton: React.FC<EnthalpyButtonProps> = ({
 
   return (
     <Button {...props} className={btnClasses} data-testid='Button'>
-      {children}
+      {children? children : "Default text"}
     </Button>
   )
 }

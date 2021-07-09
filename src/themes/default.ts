@@ -1,7 +1,8 @@
-import createMuiTheme, {
+import {
+  createMuiTheme,
   // eslint-disable-next-line no-unused-vars
   ThemeOptions
-} from '@material-ui/core/styles/createMuiTheme'
+} from '@material-ui/core'
 
 function createEnthalpyTheme(options: ThemeOptions) {
   return createMuiTheme({
