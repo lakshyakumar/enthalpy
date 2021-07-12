@@ -21,6 +21,7 @@ export const EnthalpyButton: React.FC<EnthalpyButtonProps> = ({
   link,
   justIcon,
   className,
+  buttonNavLink,
   ...props
 }): JSX.Element => {
 
@@ -40,9 +41,13 @@ export const EnthalpyButton: React.FC<EnthalpyButtonProps> = ({
     [className]: className
   })
 
+  const navigateToRoute = () => {
+    alert(buttonNavLink);
+  }
+
   return (
-    <Button {...props} className={btnClasses} data-testid='Button'>
-      {children? children : "Default text"}
+    <Button {...props} className={btnClasses} data-testid='Button' onClick={navigateToRoute}>
+      {children ? children : "Default text"}
     </Button>
   )
 }

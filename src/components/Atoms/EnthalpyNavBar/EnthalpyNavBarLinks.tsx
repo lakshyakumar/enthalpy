@@ -50,7 +50,7 @@ export default function NavBarLinks() {
         />
       </ListItem>
       <ListItem className={classes.listItem}>
-        <EnthalpyButton href='#' className={classes.navLink} simple>
+        <EnthalpyButton buttonNavLink={"/downloadPage"} className={classes.navLink} simple>
           <CloudDownload className={classes.icons} /> Download
         </EnthalpyButton>
       </ListItem>
@@ -66,7 +66,7 @@ export default function NavBarLinks() {
           placement={window.innerWidth > 959 ? 'top' : 'left'}
           classes={{ tooltip: classes.tooltip }}
         >
-          <EnthalpyButton href='#' simple className={classes.navLink}>
+          <EnthalpyButton simple className={classes.navLink}>
             <FontAwesomeIcon icon={faTwitter} className={classes.socialIcons} />
           </EnthalpyButton>
         </Tooltip>
@@ -78,7 +78,7 @@ export default function NavBarLinks() {
           placement={window.innerWidth > 959 ? 'top' : 'left'}
           classes={{ tooltip: classes.tooltip }}
         >
-          <EnthalpyButton simple href='#' className={classes.navLink}>
+          <EnthalpyButton simple className={classes.navLink}>
             <FontAwesomeIcon
               icon={faFacebook}
               className={classes.socialIcons}
@@ -93,7 +93,7 @@ export default function NavBarLinks() {
           placement={window.innerWidth > 959 ? 'top' : 'left'}
           classes={{ tooltip: classes.tooltip }}
         >
-          <EnthalpyButton simple href='#' className={classes.navLink}>
+          <EnthalpyButton simple className={classes.navLink}>
             <FontAwesomeIcon
               icon={faInstagram}
               className={classes.socialIcons}

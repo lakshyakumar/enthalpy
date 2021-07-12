@@ -8,6 +8,7 @@ export interface EnthalpyButtonProps extends ButtonProps {
   link?: boolean
   justIcon?: boolean
   className?: string
+  buttonNavLink?: string
 }
 
 export interface ButtonStyle {
